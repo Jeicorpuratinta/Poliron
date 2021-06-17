@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+<meta  charset="utf-8" >
+<title>Documento</title>
+<link rel="stylesheet"  href="indexcss.css" >
+</head>
+
+<body>
+	<section></section>
+	<script>
+		function createSquare(){
+			const section =document.querySelector('section');
+			const square =document.createElement('span');
+	
+			var size = Math.random()* 41;
+			square.style.width=10 + size +'px';
+			square.style.height=10 + size +'px';
+			square.style.top= Math.random() * innerHeight + '1px';
+			square.style.left= Math.random() * innerWidth + '1px';
+			square.style.right= Math.random() * innerWidth + '1px';
+			section.appendChild(square);
+			setTimeout(()=>{
+				square.remove()
+			},5000)
+		}
+		setInterval(createSquare ,130)
+	</script>
+		<section></section>
+		<script>
+			function createSquare(){
+				const section =document.querySelector('section');
+				const square =document.createElement('span');
+		
+				var size = Math.random()* 26;
+				square.style.width=4 + size +'px';
+				square.style.height=4 + size +'px';
+				square.style.top= Math.random() * innerHeight + 'px';
+				square.style.left= Math.random() * innerWidth + 'px';
+				square.style.right= Math.random() * innerWidth + 'px';
+				section.appendChild(square);
+				setTimeout(()=>{
+					square.remove()
+				},5000)
+			}
+			setInterval(createSquare ,100)
+		</script>
+	
+<form name="login"> 
+  <section class="form-register " >
+	<h4>Crear cuenta</h4> 
+
+		<input class="controls" type="text" name="Nombres" id="Nombres" placeholder="Ingrese su Nombre">
+		<input class="controls" type="text" name="Apellido" id="Apellido" placeholder="Ingrese su Apellido">
+		<input class="controls" type="email" name="Correo" id="Correo" placeholder="Ingrese su Correo">
+		<input class="controls" type="password" name="Contrseña" id="Contraseña" placeholder="Ingrese su Contraseña">
+		<p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
+		<section class="caja">
+	<input class="botons"  type="submit" value="Registrar">
+</section >
+<p><a href="#">¿Ya tengo cuenta?</a></p>
+
+	</section>
+		
+
+
+</body>
+</html>
